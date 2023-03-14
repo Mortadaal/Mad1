@@ -36,6 +36,7 @@ fun HomeScreen(navController: NavController) {
                     }
                 )
             },
+
             drawerGesturesEnabled = scaffoldState.drawerState.isOpen,
             drawerContent = {
 
@@ -67,7 +68,13 @@ fun HomeScreen(navController: NavController) {
                 )
             }
         ) {
-
+            Column(
+                modifier = Modifier.fillMaxSize(),
+                verticalArrangement = Arrangement.Center,
+                horizontalAlignment = Alignment.CenterHorizontally
+            ) {
+                Text(text = "Welcome to Home Screen")
+            }
         }
 
     }
