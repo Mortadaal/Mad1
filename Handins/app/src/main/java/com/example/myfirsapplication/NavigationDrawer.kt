@@ -12,9 +12,10 @@ import androidx.compose.ui.Modifier
 import androidx.compose.ui.text.TextStyle
 import androidx.compose.ui.unit.dp
 import androidx.compose.ui.unit.sp
+import androidx.navigation.NavController
 
 @Composable
-fun DrawerHeader() {
+fun DrawerHeader( ) {
     Box(
         modifier = Modifier
             .fillMaxWidth()
@@ -32,7 +33,7 @@ fun DrawerBody(
 items:List<MenuItem>,
 modifier: Modifier=Modifier,
 itemTextStyle: TextStyle = TextStyle(fontSize = 18.sp),
-onItemClick:(MenuItem)-> Unit
+onItemClick:(MenuItem)-> Unit,
 ) {
     LazyColumn(modifier){
         items(items){item ->
