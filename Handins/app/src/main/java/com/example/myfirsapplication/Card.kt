@@ -12,21 +12,22 @@ import androidx.compose.ui.Modifier
 import androidx.compose.ui.res.painterResource
 import androidx.compose.ui.unit.dp
 
+
 private const val TAG = "ActorCard"
 
 @Composable
-fun PersonCard(model: CardModel) {
+fun PersonCard(model: FriendModel) {
 
     Card(
         Modifier
             .fillMaxWidth()
-            .clickable {
+            .clickable() {
                 Log.v(TAG, model.drawable.toString())
             }) {
         Row() {
             Image(
                 painter = painterResource(id = model.drawable),
-                contentDescription = "Clint Eastwood",
+                contentDescription = "Mortada Almosawi",
                 modifier = Modifier
                     .width(100.dp)
             )
@@ -39,7 +40,7 @@ fun PersonCard(model: CardModel) {
                     text = "${model.firstName} ${model.lastName}",
                     style = MaterialTheme.typography.h5
                 )
-                Text(text = "Occupation: ${model.occupation}", style = MaterialTheme.typography.h5)
+
             }
         }
     }

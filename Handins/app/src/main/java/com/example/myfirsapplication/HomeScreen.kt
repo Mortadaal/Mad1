@@ -57,8 +57,6 @@ fun HomeScreen(navController: NavController) {
                         )
                     ),
                     onItemClick ={
-
-
                         when(it.id){
                             "home" -> navController.navigate(Screen.HomeScreen.route)
                             "friends" -> navController.navigate(Screen.FriendScreen.route)
@@ -74,6 +72,7 @@ fun HomeScreen(navController: NavController) {
                 horizontalAlignment = Alignment.CenterHorizontally
             ) {
                 Text(text = "Welcome to Home Screen")
+
             }
         }
 

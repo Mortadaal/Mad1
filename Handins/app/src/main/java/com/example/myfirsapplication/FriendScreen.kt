@@ -69,7 +69,7 @@ fun FriendScreen(navController: NavController) {
         ) {
 
 
-            CardList(resources = getCardModels())
+            FriendList(resources = getFriendModelModels( ))
 
         }
 

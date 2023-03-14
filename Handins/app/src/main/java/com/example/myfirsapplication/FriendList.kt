@@ -4,7 +4,7 @@ import androidx.compose.foundation.layout.Column
 import androidx.compose.runtime.Composable
 
 @Composable
-fun CardList(resources: List<CardModel>) {
+fun FriendList(resources: List<FriendModel>) {
 
     Column() {
         resources.forEach { PersonCard(it) }
